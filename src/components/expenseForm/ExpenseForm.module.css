@@ -1,0 +1,11 @@
+.container{
+    width: 30%;
+    border: 1px solid black;
+    margin: 1%;
+}
+.formHeading{
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    padding: 1%;
+}
