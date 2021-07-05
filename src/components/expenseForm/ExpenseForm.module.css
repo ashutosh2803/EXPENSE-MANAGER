@@ -1,11 +1,71 @@
-.container{
-    width: 30%;
-    border: 1px solid black;
-    margin: 1%;
+.formWrapper{
+    margin: 1% auto;
+    width: 20%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: bisque;
+}
+.inputBox{
+    display: flex;
+    margin: 3%;
+    justify-content: space-between;
+}
+.inputBox > label{
+    font-weight: 400;
+    font-size: 25px;
+}
+.inputBox > input{
+    border: none;
+    outline: none;
+    letter-spacing: 0.1ch;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3%;
+}
+.inputBox1{
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.inputBox1 > label{
+    font-weight: 400;
+    font-size: 25px;
+}
+.inputBox1 > select{
+    font-weight: bold;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3%;
+    letter-spacing: 0.1ch;
+}
+.inputBox1 > select > option{
+    font-weight: bold;
+    padding: 3%;
+    letter-spacing: 0.1ch;
+}
+.submitBtn{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    letter-spacing: 0.5ch;
+    padding: 2%;
+    font-size: 25px;
+    border-radius: 10px;
+
+    transition: 0.1s ease-in;
+}
+.submitBtn:hover{
+    background-color: teal;
+    color: white;
 }
 .formHeading{
     background-color: gold;
     color: black;
     font-weight: bold;
-    padding: 1%;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 5% auto;
+    padding: 3%;
 }
