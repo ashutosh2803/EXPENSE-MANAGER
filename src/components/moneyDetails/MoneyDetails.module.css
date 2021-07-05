@@ -1,0 +1,13 @@
+.MoneyDetailsWrapper{
+    width: fit-content;
+    padding: 3%;
+    margin: 1%;
+}
+.MoneyRow{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.MoneyRow img{
+    width: 50%;
+}
