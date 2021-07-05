@@ -6,7 +6,7 @@ const DetialsAuthProvider = ({ children }) => {
     const [details, setDetails] = React.useState([]);
 
     const changeDetails = (payload) => {
-        setDetails([...details, ...payload]);
+        setDetails([...details, payload]);
     }
     const value = {
         details,

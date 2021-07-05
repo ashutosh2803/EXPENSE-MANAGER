@@ -19,7 +19,8 @@ const ExpenseForm = () => {
         }
         console.log(payload)
         changeDetails(payload)
-        console.log("updated Details",details);
+        console.log("updated Details", details);
+        // window.alert("added new record, Click Ok")
     }
     return (
         <div className={styles.formWrapper}>
