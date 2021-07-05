@@ -1,9 +1,9 @@
 .MoneyDetailsWrapper{
-    width: 96%;
+    width: 80%;
     padding: 1%;
     margin: 1%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .MoneyRow{
     border: 1px solid black;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     margin: 1%;
     width: 33%;
-    justify-content: space-evenly;
+    align-items: center;
 }
 .MoneyRow p{
     font-weight: 400;

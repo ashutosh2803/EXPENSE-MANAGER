@@ -3,6 +3,7 @@ import { ExpenseForm } from '../expenseForm/ExpenseForm';
 import { ProfileBox } from '../profileBox/ProfileBox';
 import { MoneyDetails } from '../moneyDetails/MoneyDetails';
 import { Navbar } from '../navbar/Navbar';
+import { Table } from '../table/Table';
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
@@ -13,7 +14,10 @@ const HomePage = () => {
                 <ProfileBox />
                 <MoneyDetails />
             </div>
-            <ExpenseForm/>
+            <div className={styles.expenseWrapper}>
+                <ExpenseForm />
+                <Table/>
+            </div>
         </div>
     )
 }

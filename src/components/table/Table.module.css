@@ -1,0 +1,27 @@
+.TableWrapper{
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 5px;
+    margin: 1%;
+}
+.TableHeading{
+    background-color: teal;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1ch;
+    font-size: 25px;
+    padding: 1%;
+}
+.table{
+    margin: auto;
+    border: 1px solid black;
+    width: 100%;
+}
+.table th{
+    font-size: 20px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.table td{
+    border-right: 1px solid black;
+}
