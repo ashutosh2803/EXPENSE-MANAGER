@@ -1,0 +1,22 @@
+.NavbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(133, 93, 93, 0.212);
+    padding: 0.5%;
+}
+.NavbarWrapper > p{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1ch;
+}
+.logoutBtn{
+    color: white;
+    border: none;
+    width: 8%;
+    background-color: red;
+    letter-spacing: 0.1ch;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0.5%;
+    border-radius: 10px;
+}
