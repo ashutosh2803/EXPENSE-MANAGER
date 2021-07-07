@@ -11,11 +11,14 @@ const ExpenseForm = () => {
 
     const handleClick = () => {
         console.log(type)
+        const date = Date(Date.now());
+        const time = date.split("GMT")
         const payload = {
             id: uuid(),
             title,
             amount,
-            type
+            type,
+            timeStamp: time[0]
         }
         console.log(payload)
         changeDetails(payload)
@@ -27,15 +30,15 @@ const ExpenseForm = () => {
             <h1 className={styles.formHeading}>New Expense</h1>
             <div className={styles.inputBox}>
                 <label htmlFor="title">Title</label>
-                <input type="text" placeholder="title here" value={title} required={true} name="amount" onChange={(e) => setTitle(e.target.value)} />
+                <input required type="text" placeholder="title here" value={title} name="amount" onChange={(e) => setTitle(e.target.value)} />
             </div>
             <div className={styles.inputBox}>
                 <label htmlFor="amount">Amount</label>
-                <input type="number" value={amount} name="amount" required={true} onChange={(e) => setAmount(e.target.value)} />
+                <input required type="number" value={amount} name="amount" onChange={(e) => setAmount(e.target.value)} />
             </div>
             <div className={styles.inputBox1}>
                 <label>Type</label>
-                <select onChange={(e) => setType(e.target.value)}>
+                <select required onChange={(e) => setType(e.target.value)}>
                     <option value="credit">Credit</option>
                     <option value="debit">Debit</option>
                 </select>

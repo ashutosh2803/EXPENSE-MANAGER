@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import styles from "./MoneyDetails.module.css";
+import { DetailsProvider } from '../DetailsContext/DetialsAuthProvider';
 
 const MoneyDetails = () => {
+    const { details } = useContext(DetailsProvider);
+    const [totalIncome, setTotalIncome] = useState(0);
+    const [totalExpense, setTotalExpense] = useState(0);
+    const [totalBalance, setTotalBalance] = useState(0);
+
+    React.useEffect(() => {
+        let income = 0;
+        let expense = 0;
+        let balance = 0;
+        for (let i = 0; i < details.length; i++){
+            if (details[i].type === "credit") {
+               
+            }
+        }
+    }, [])
     return (
         <div className={styles.MoneyDetailsWrapper}>
             <div className={styles.MoneyRow}>
