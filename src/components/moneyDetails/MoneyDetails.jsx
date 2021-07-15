@@ -11,13 +11,18 @@ const MoneyDetails = () => {
     React.useEffect(() => {
         let income = 0;
         let expense = 0;
-        let balance = 0;
         for (let i = 0; i < details.length; i++){
             if (details[i].type === "credit") {
-               
+                income += Number(details[i].amount);
+            }
+            else {
+                expense += Number(details[i].amount);
             }
         }
-    }, [])
+        setTotalBalance(income - expense);
+        setTotalExpense(expense);
+        setTotalIncome(income);
+    }, [details])
     return (
         <div className={styles.MoneyDetailsWrapper}>
             <div className={styles.MoneyRow}>
@@ -26,7 +31,7 @@ const MoneyDetails = () => {
                 </div>
                 <div>
                     <p>Total Income</p>
-                    <p><span style={{fontSize: "25px", fontWeight: "bold"}}>&#8377;</span> 151000</p>
+                    <p><span style={{ fontSize: "25px", fontWeight: "bold" }}>&#8377;</span> {totalIncome}</p>
                 </div>
             </div>
             <div className={styles.MoneyRow}>
@@ -35,7 +40,7 @@ const MoneyDetails = () => {
                 </div>
                 <div>
                     <p>Total Expenses</p>
-                    <p><span style={{fontSize: "25px", fontWeight: "bold"}}>&#8377;</span> 5000</p>
+                    <p><span style={{fontSize: "25px", fontWeight: "bold"}}>&#8377;</span>{totalExpense}</p>
                 </div>
             </div>
             <div className={styles.MoneyRow}>
@@ -44,7 +49,7 @@ const MoneyDetails = () => {
                 </div>
                 <div>
                     <p>Total Balance</p>
-                    <p><span style={{fontSize: "25px", fontWeight: "bold"}}>&#8377;</span> 146000</p>
+                    <p><span style={{ fontSize: "25px", fontWeight: "bold" }}>&#8377;</span>{totalBalance}</p>
                 </div>
             </div>
         </div>
