@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { DetialsAuthProvider } from './components/DetailsContext/DetialsAuthProvider';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DetialsAuthProvider>
-      <App />
-    </DetialsAuthProvider>
+    <BrowserRouter>
+      <DetialsAuthProvider>
+        <App />
+        </DetialsAuthProvider>
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,43 @@
+.formWrapper{
+    width: 30%;
+    margin: 1% auto;
+}
+.formTitle{
+    letter-spacing: 0.1ch;
+    font-size: 40px;
+}
+.inputWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.inputWrapper > label{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1ch;
+}
+.inputWrapper > input{
+    outline: none;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    letter-spacing: 0.1ch;
+    font-weight: 400;
+}
+.inputWrapper > input:focus{
+    border-bottom: 3px solid black;
+}
+.login{
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1ch;
+    padding: 1%;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.login:hover{
+    color: red;
+}
