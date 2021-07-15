@@ -29,3 +29,6 @@
 .table td{
     border-right: 1px solid black;
 }
+tbody{
+    overflow-y: scroll;
+}

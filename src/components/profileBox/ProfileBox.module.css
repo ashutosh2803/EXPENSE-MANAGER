@@ -5,11 +5,11 @@
     width: 15%;
     margin: 1%;
 }
-.profileWrapper > p{
+.name{
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 0.1ch;
 }
 .profileWrapper > img{
-    width: 50%;
+    width: 40%;
 }
