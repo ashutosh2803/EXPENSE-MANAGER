@@ -6,6 +6,7 @@
 }
 .NavbarWrapper > p{
     font-weight: bold;
+    cursor: pointer;
     font-size: 20px;
     letter-spacing: 0.1ch;
 }
@@ -18,5 +19,6 @@
     font-weight: bold;
     font-size: 15px;
     padding: 0.5%;
+    cursor: pointer;
     border-radius: 10px;
 }
