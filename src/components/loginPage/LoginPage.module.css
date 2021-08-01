@@ -1,6 +1,10 @@
 .formWrapper{
     width: 30%;
     margin: 1% auto;
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+    padding: 1%;
+    border-radius: 20px;
 }
 .formTitle{
     letter-spacing: 0.1ch;
@@ -27,7 +31,8 @@
     border-bottom: 3px solid black;
 }
 .login{
-    width: 100%;
+    width: 30%;
+    margin: auto;
     font-weight: bold;
     letter-spacing: 0.1ch;
     padding: 1%;
