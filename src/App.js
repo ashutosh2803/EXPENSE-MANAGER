@@ -1,3 +1,4 @@
+import { Route } from 'react-router-dom';
 import './App.css';
 import { HomePage } from './components/homepage/HomePage';
 import { LoginPage } from './components/loginPage/LoginPage';
@@ -5,8 +6,9 @@ import { LoginPage } from './components/loginPage/LoginPage';
 function App() {
   return (
     <div className="App">
-      <LoginPage/>
+      {/* <LoginPage/> */}
       {/* <HomePage/> */}
+      <Route/>
     </div>
   );
 }

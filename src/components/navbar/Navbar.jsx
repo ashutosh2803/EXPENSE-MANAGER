@@ -1,12 +1,20 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
     return (
-        <div className={styles.NavbarWrapper}>
-            <p>Expense Manager</p>
-            <button className={styles.logoutBtn}>LOGOUT</button>
-        </div>
+        <div className={styles.Navbar}>
+        <NavLink
+            key={"LOGIN"}
+            activeStyle={{ color: "red" }}
+            style={{ margin: "20px" }}
+            to={"/dashboard"}
+            >
+            {"LOGIN"}
+            </NavLink>
+        ))}
+    </div>
     )
 }
 

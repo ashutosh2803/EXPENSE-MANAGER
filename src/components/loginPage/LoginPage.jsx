@@ -20,7 +20,7 @@ const LoginPage = () => {
         axios.post("https://reqres.in/api/login", payload).then((res) => {
             setIsAuth(true);
             console.log("login success", res.data.token);
-            history.push(<HomePage/>);
+            history.push("/dashboard")
         }).catch((err) => {
             console.log(err);
             window.alert(err, "Please Try Again!");
